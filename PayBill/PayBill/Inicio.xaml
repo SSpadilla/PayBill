@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PayBill"
+             x:Class="PayBill.Inicio" >
+   
+    <!--Contexto para el fondo-->
+    <Grid>
+        <Image Source="fondo.jpeg" HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand" Aspect="AspectFill" ></Image><!--Imagen de fondo-->
+       
+        <!--contexto donde se coloran los elementos de la maqueta-->
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+            <Image Source="logo.png" HeightRequest="225" WidthRequest="225" Margin="0,15,0,0"/>
+            <Label Text="¡Olvida la cuenta, recuerda compartir!"  TextColor="#ddffffff" Opacity=".85" FontFamily="Lato"  Font="Bold,20" />
+            <Button  Text="Comenzar" x:Name="inicioBoton" Clicked="InicioBoton_Clicked" TextColor="#ddffffff" Opacity=".85"  Font="Bold,21" BackgroundColor="#29A77F"  HeightRequest="60" Margin="60,70,60,70" />
+        </StackLayout>
+        
+    </Grid>
+</ContentPage>

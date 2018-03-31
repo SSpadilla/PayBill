@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PayBill.AgregarCuenta">
+    
+    <!--Contexto para imagen de fondo-->
+    <Grid>
+        <Image Source="fondoVentana.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill" ></Image>
+        
+        <!--Contexto para el ingreso de informacion-->
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+            <Label Text="Ingrese la cantidad a agregar a la cuenta" Font="Bold, 20" TextColor="White" HorizontalOptions="Center"></Label>
+            <Entry x:Name="CuentaAgregar"  Keyboard="Numeric" Placeholder="Saldo de Cuenta (Q)"  WidthRequest="150" TextColor="White" PlaceholderColor="#ddeeeeee"  FontFamily="Lato" />
+            
+            <!--Contexto para los botones-->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                <Button x:Name="AceptarBoton"  Clicked="AceptarBoton_Clicked" Text="Aceptar" TextColor="#ddffffff" Opacity=".95" BackgroundColor="#29A77F"/>
+                <Button x:Name="CancelarBoton" Clicked="CancelarBoton_Clicked" Text="Cancelar" TextColor="#ddffffff" Opacity=".95" BackgroundColor="#29A77F"/>
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>

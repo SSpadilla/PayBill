@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PayBill.PaginaPrincipal"  >
+    
+    <!--Contexto para el fondo-->
+    <Grid>
+        <Image Source="principalFondo.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill" ></Image>
+        
+        <!--Columna que ocupa todo el ancho-->
+        <Grid>
+            <Image Source="logo.png" Margin="50,48,0,0" WidthRequest="125" HeightRequest="125" HorizontalOptions="Start" VerticalOptions="Start"/>
+            <Image Source="menuFlecha.png" Margin="1,8,0,0"  HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="30" HeightRequest="35"></Image>
+            
+            <!--Contexto para los textos de la pantalla exterior-->
+            <Grid VerticalOptions="Start" HorizontalOptions="End">
+                <Label Text="Cuenta Total:"  TextColor="#ffffff" FontFamily="Lato"  Font="20" Margin="0,184,15,0" />
+                <Label Text="{Binding TotalCuenta,StringFormat='{}Q.{0:N}'}"  TextColor="#ffffff" FontFamily="Lato"  Font="Bold,18" Margin="117,185,10,0" />
+            </Grid>
+            
+            <!--Contexto para la pantalla interior-->
+            <ScrollView >
+                <StackLayout Margin="9.5,204,9.5,9.5" HorizontalOptions="End" VerticalOptions="Start">
+                    <ListView x:Name="PrincipalListaX"  HorizontalOptions="Center" ItemSelected="PrincipalListaX_ItemSelected" >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <TextCell Text="{Binding Nombre}" TextColor="White" Detail="{Binding Cuenta,StringFormat='{}Q.{0:N}'}" DetailColor="Black"></TextCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </ScrollView>
+            <Button x:Name="AgregarBoton" Text="+" Clicked="AgregarBoton_Clicked"  TextColor="#29A77F" Opacity=".85"  Font="Bold,30" Margin="0,0,30,40" VerticalOptions="End" BackgroundColor="White" HeightRequest="60" WidthRequest="60" HorizontalOptions="End" />
+            <Label Text="Pulsa + para agreagar usuario" VerticalOptions="End" TextColor="#ddffffff" Opacity=".85" FontFamily="Lato" Margin="10,0,0,0" Font="Bold,12" />
+        </Grid>
+    </Grid>
+</ContentPage>

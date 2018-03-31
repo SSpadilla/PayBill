@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PayBill.Android", "PayBill\PayBill.Android\PayBill.Android.csproj", "{D69C4E60-0E0A-4C6B-9DEA-F70339C2F335}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "PayBill", "PayBill\PayBill\PayBill.shproj", "{F651AC03-746A-4C28-9A31-7B2A0EB123F9}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		PayBill\PayBill\PayBill.projitems*{d69c4e60-0e0a-4c6b-9dea-f70339c2f335}*SharedItemsImports = 4
+		PayBill\PayBill\PayBill.projitems*{f651ac03-746a-4c28-9a31-7b2a0eb123f9}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D69C4E60-0E0A-4C6B-9DEA-F70339C2F335}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D69C4E60-0E0A-4C6B-9DEA-F70339C2F335}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D69C4E60-0E0A-4C6B-9DEA-F70339C2F335}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D69C4E60-0E0A-4C6B-9DEA-F70339C2F335}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D69C4E60-0E0A-4C6B-9DEA-F70339C2F335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D69C4E60-0E0A-4C6B-9DEA-F70339C2F335}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {970D093F-E9CF-4093-9832-E0D5E9D308DF}
+	EndGlobalSection
+EndGlobal

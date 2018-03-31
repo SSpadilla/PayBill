@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PayBill.AcercaDe">
+
+    <!--Contexto para el fondo-->
+    <Grid>
+        <Image Source="fondo.jpeg" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill" ></Image><!--Imagen de Fondo-->
+        <StackLayout VerticalOptions="Center"  HorizontalOptions="Center">
+            
+            <!--contexto para los elementos de la maqueta-->
+            <Label Text="Desarrollador"  TextColor="#ddffffff" HorizontalOptions="Center" Opacity=".85" FontFamily="Lato"  Font="Bold,25" />
+            <Image Source="perfil.png" WidthRequest="120" HeightRequest="120"/>
+            <Label Text="Sam Padilla"  TextColor="#ddffffff" HorizontalOptions="Center" Opacity=".85" FontFamily="Lato"  Font="Bold,20" />
+            <Button  Text="Proyecto en GitHub" x:Name="githubBoton" Clicked="githubBoton_Clicked" TextColor="#ddffffff" Opacity=".85"  Font="Bold,17" BackgroundColor="#29A77F"  HeightRequest="60" Margin="60,15,60,0" />
+        </StackLayout>
+    </Grid>
+</ContentPage>

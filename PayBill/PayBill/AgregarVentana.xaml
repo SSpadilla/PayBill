@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PayBill.AgregarVentana" >
+   
+    <!--Contexto para la imagen-->
+    <Grid>
+        <Image Source="fondoVentana.png" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Aspect="AspectFill" ></Image>
+       
+        <!--Contexto para los elementos de la entrada de usuario-->
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+            <Label Text="Ingreso a la cuenta" Font="Bold, 30" TextColor="White" HorizontalOptions="Center"></Label>
+            <Entry x:Name="NombreEntrada"  Placeholder="Nombre"  WidthRequest="150" TextColor="White" PlaceholderColor="#ddeeeeee"    FontFamily="Lato" />
+            <Entry x:Name="CuentaEntrada" Keyboard="Numeric" Placeholder="Saldo de Cuenta (Q)"  WidthRequest="150" TextColor="White" PlaceholderColor="#ddeeeeee"  FontFamily="Lato" />
+            <!--Contexto para los botones de aceptar o cancelar-->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="AceptarBoton"  Clicked="AceptarBoton_Clicked" Text="Aceptar" TextColor="#ddffffff" Opacity=".95" BackgroundColor="#29A77F"/>
+                <Button x:Name="CancelarBoton" Clicked="CancelarBoton_Clicked" Text="Cancelar" TextColor="#ddffffff" Opacity=".95" BackgroundColor="#29A77F"/>
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>

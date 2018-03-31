@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PayBill.MenuPage" >
+    
+    <!--Crea la pagina del menu (Master)-->
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+
+            <!--contexto de elementos en el menu-->
+            <StackLayout>
+                <Image Source="menuImg.jpeg" HeightRequest="217" ></Image>
+                
+                <!--Listado de opciones del menu-->
+                <ListView x:Name="MenuListaX" ItemSelected="MenuListaX_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding MenuTitulo}" Detail="{Binding MenuDetalle}"></TextCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                
+                <!--Contexto para span de compartir-->
+                <Grid BackgroundColor="#29A77F" HeightRequest="30">
+                    <Label Text="Comparte Nuestra aplicacion" VerticalOptions="Center" HorizontalOptions="Center"  Font="14" TextColor="White"></Label>
+                </Grid>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    
+    <!--La detailPage es invocada en el CodeBehind-->
+</MasterDetailPage>
